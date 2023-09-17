@@ -1,0 +1,99 @@
+.mobile-header-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    top: 66px;
+    z-index: 2;
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 6px 4px #d9d9d9;
+    &.hide {
+        display: none;
+    }
+    .accordion-item-2 {
+        border: 0;
+        outline: 0;
+        button {
+            border: 0;
+            outline: 0;
+            background-color: white;
+        }
+    }
+    button {
+        border: 0;
+        outline: 0;
+        background-color: white !important;
+    }
+    .menu-item {
+        border-bottom: 2px solid;
+        &:nth-child(1) {
+            border-bottom: 2px solid #00aeef;
+        }
+        &:nth-child(2) {
+            border-bottom: 2px solid #8b9902;
+        }
+        &:nth-child(3) {
+            border-bottom: 2px solid #fdc93e;
+        }
+        &:nth-child(4) {
+            border-bottom: 2px solid #ed72aa;
+        }
+        &:nth-child(5) {
+            border-bottom: 2px solid #999999;
+        }
+        &.parent {
+            background-color: #f2f5bb !important;
+        }
+    }
+    .accordion-header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        font-size: 18px;
+        font-weight: 700;
+        &.drop-header {
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 6px;
+                background-image: url('./assets/Polygon.svg');
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+            margin: 0;
+            li {
+                padding: 4px 10px;
+                font-size: 14px;
+                background-color: white;
+                border-top: 1px solid #636465;
+                cursor: pointer;
+            }
+        }
+    }
+    .tools {
+        margin-top: 40px;
+        display: flex;
+        font-size: 13px;
+        a {
+            color: #636465;
+            margin-right: 8px;
+        }
+    }
+}

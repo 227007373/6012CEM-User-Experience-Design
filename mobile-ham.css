@@ -1,0 +1,96 @@
+.mobile-header-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 66px;
+  z-index: 2;
+  background-color: white;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 6px 4px #d9d9d9;
+}
+.mobile-header-menu.hide {
+  display: none;
+}
+.mobile-header-menu .accordion-item-2 {
+  border: 0;
+  outline: 0;
+}
+.mobile-header-menu .accordion-item-2 button {
+  border: 0;
+  outline: 0;
+  background-color: white;
+}
+.mobile-header-menu button {
+  border: 0;
+  outline: 0;
+  background-color: white !important;
+}
+.mobile-header-menu .menu-item {
+  border-bottom: 2px solid;
+}
+.mobile-header-menu .menu-item:nth-child(1) {
+  border-bottom: 2px solid #00aeef;
+}
+.mobile-header-menu .menu-item:nth-child(2) {
+  border-bottom: 2px solid #8b9902;
+}
+.mobile-header-menu .menu-item:nth-child(3) {
+  border-bottom: 2px solid #fdc93e;
+}
+.mobile-header-menu .menu-item:nth-child(4) {
+  border-bottom: 2px solid #ed72aa;
+}
+.mobile-header-menu .menu-item:nth-child(5) {
+  border-bottom: 2px solid #999999;
+}
+.mobile-header-menu .menu-item.parent {
+  background-color: #f2f5bb !important;
+}
+.mobile-header-menu .accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+}
+.mobile-header-menu .accordion-header.drop-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background-image: url("./assets/Polygon.svg");
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mobile-header-menu .accordion-content {
+  display: none;
+}
+.mobile-header-menu .accordion-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.mobile-header-menu .accordion-content ul li {
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: white;
+  border-top: 1px solid #636465;
+  cursor: pointer;
+}
+.mobile-header-menu .tools {
+  margin-top: 40px;
+  display: flex;
+  font-size: 13px;
+}
+.mobile-header-menu .tools a {
+  color: #636465;
+  margin-right: 8px;
+}/*# sourceMappingURL=mobile-ham.css.map */
